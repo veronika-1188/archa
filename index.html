@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/06d986b207.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <title>ARCHA</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="img/logo.svg" alt="logo" class="logo">
+
+        <form class="search" action="#">
+            <input type="text" placeholder="Искать" name="search" class="search__input">
+            <button class="search__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+        </form>
+
+        <nav class="header__nav">
+            <a class="nav__link text" href="#1">О компании</a>
+            <a class="nav__link text" href="#2">Портфолио</a>
+            <a class="nav__link text" href="#3">Отзывы</a>
+            <a class="nav__link text" href="#4">Контакты</a>
+        </nav>
+        <select name="select" class="tema">
+            <option value="black" class="text">Темная тема</option>
+            <option value="white" class="text">Светлая тема</option>
+        </select>
+    </header>
+
+    <!-- FIRST SECTION -->
+    <section class="first-section">
+        <p class="first-section__name-company text">Арча-сервис</p>
+        <h1 class="first-section__title">Разработка и сопровождение сайтов</h1>
+        <a class="first__btn text dark-color" href="#4">Заказать</a>
+        <!-- <div class="itisbred">
+                <img src="img/lines.svg" class="first-section__img">
+            </div> -->
+    </section>
+
+    <!-- SECTION NUMBERS -->
+    <section class="numbers" id="1">
+        <div class="numbers__items">
+            <div class="numbers__item">
+                <p class="numbers__item__number">19</p>
+                <p class="numbers__item__text text">Лет на рынке труда</p>
+            </div>
+            <div class="numbers__item">
+                <p class="numbers__item__number">11500+</p>
+                <p class="numbers__item__text text">Довольных клиентов</p>
+            </div>
+            <div class="numbers__item">
+                <p class="numbers__item__number">43</p>
+                <p class="numbers__item__text text">Специалиста работают у нас</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECTION PORTFOLIO -->
+    <section class="portfolio" id="2">
+        <h2 class="section-title">Портфолио</h2>
+
+
+        <div class="slider">
+            <div>
+                <img src="img/1primer.svg" alt="">
+                <img src="img/2primer.svg" alt="">
+                <img src="img/3primer.svg" alt="">
+                <img src="img/1primer.svg" alt="">
+                <img src="img/2primer.svg" alt="">
+                <img src="img/3primer.svg" alt="">
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- SECTION REWIEWS -->
+    <section class="rewiews" id="3">
+        <h2 class="section-title">Отзывы</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <div class="comm-text">
+                        <div class="rewiews__slider__card">
+                            <div class="slider__card__info">
+
+                                <p class="big-text main-color ii">Иван Иванов</p>
+                            </div>
+                            <p class="slider__card__comm text light-color">Сотрудничество с этой компанией было просто
+                                великолепным! Они учли все
+                                мои пожелания и разработали сайт, который полностью соответствует моим требованиям.
+                                Дизайн сайта
+                                потрясающий, функционал работает безупречно. Очень рекомендую эту компанию!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rewiews__slider__card">
+                        <div class="slider__card__info">
+
+                            <p class="big-text main-color">Ипполит Ипполитович</p>
+                        </div>
+                        <p class="slider__card__comm text light-color">Сотрудничество с этой компанией было просто
+                            великолепным! Они учли все
+                            мои пожелания и разработали сайт, который полностью соответствует моим требованиям. Дизайн
+                            сайта
+                            потрясающий, функционал работает безупречно. Очень рекомендую эту компанию!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="rewiews__slider__card">
+                        <div class="slider__card__info">
+
+                            <p class="big-text main-color">Игорь Игоривич</p>
+                        </div>
+                        <p class="slider__card__comm text light-color">Сотрудничество с этой компанией было просто
+                            великолепным! Они учли все
+                            мои пожелания и разработали сайт, который полностью соответствует моим требованиям. Дизайн
+                            сайта
+                            потрясающий, функционал работает безупречно. Очень рекомендую эту компанию!</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-button-next "></div>
+        <div class="swiper-button-prev"></div>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+
+
+
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="4">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts__all">
+            <div class="contact__info">
+                <div class="contact__info__item">
+                    <p class="big-text main-color"><i class="fa-solid fa-phone-volume"></i> Связаться с нами</p>
+                    <div class="contact__info__item__text">
+                        <p class="text light-color">8-800-201-22-67</p>
+                        <p class="text light-color">gk@archa-sv.ru</p>
+                        <p class="text light-color">direct@archa-sv.ru</p>
+                    </div>
+                </div>
+                <div class="contact__info__item">
+                    <p class="big-text main-color"><i class="fa-sharp fa-solid fa-location-dot"></i> Наш адрес</p>
+                    <div class="contact__info__item__text">
+                        <p class="text light-color">г. Екатеринбург, ул. Пушкина, стр. 5, этаж 3, офис 57</p>
+                        <p class="text light-color">ООО "Арча-сервис"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__interactive">
+                <form class="main-form" action="#">
+                    <p class="text-form dark-color">Оставить заявку</p>
+                    <input type="text" name="name" class="main-form__input" placeholder="Имя">
+                    <input type="tel" name="tel" class="main-form__input" placeholder="Телефон">
+                    <input type="email" name="email" class="main-form__input" placeholder="Email">
+                    <input type="submit" class="main-form__btn" value="Отправить">
+                </form>
+            </div>
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps/org/archa_servis/61297894640/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Арча-сервис</a><a
+                    href="https://yandex.ru/maps/54/yekaterinburg/category/it_company/184106174/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">IT-компания в Екатеринбурге</a><a
+                    href="https://yandex.ru/maps/54/yekaterinburg/category/cash_registers_and_supplies/184106968/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:28px;">Кассовые аппараты и расходные
+                    материалы в Екатеринбурге</a><iframe
+                    src="https://yandex.ru/map-widget/v1/org/archa_servis/61297894640/?ll=60.608119%2C56.836333&z=16.42"
+                    frameborder="1" class="map" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <img class="footer__img" src="img/footer-line.svg">
+        <header>
+            <img src="img/logo.svg" alt="logo" class="logo">
+
+            <form class="search" action="#">
+                <input type="text" placeholder="Искать" name="search" class="search__input">
+                <button class="search__btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+            </form>
+
+            <nav class="header__nav">
+                <a class="nav__link text" href="#1">О компании</a>
+                <a class="nav__link text" href="#2">Портфолио</a>
+                <a class="nav__link text" href="#3">Отзывы</a>
+                <a class="nav__link text" href="#4">Контакты</a>
+            </nav>
+            <select name="select" class="tema">
+                <option value="black">Темная тема</option>
+                <option value="white">Светлая тема</option>
+            </select>
+        </header>
+        <div class="footer__info">
+            <div class="footer__info__icons">
+                <a href="#" class="footer__icons"><i class="fa-solid fa-phone"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="footer__icons"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <div class="footer__info__text">
+                <p class="text light-color">ООО "Арча-сервис" 2024 ©</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+</body>
+
+</html>
